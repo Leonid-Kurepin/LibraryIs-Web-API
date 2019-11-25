@@ -1,0 +1,72 @@
+2019-08-28T01:47:03.2154537+04:00  [INF] 
+Book was added to the library by the authorized user.
+--------------------Book--------------------
+Title: Fight club
+Author: Chuck Palahniuk
+Available count: 5
+--------------------User--------------------
+Name: admin
+Email: admin
+-------------------------------------------- (fe53465a)
+2019-08-28T01:47:06.8599494+04:00  [INF] 
+Book was added to the library by the authorized user.
+--------------------Book--------------------
+Title: Holy Bible
+Author: JESUS
+Publisher: New publish Studio
+Year of publishing: 1100
+Available count: 111
+--------------------User--------------------
+Name: admin
+Email: admin
+-------------------------------------------- (b839d029)
+2019-08-28T01:47:19.2121181+04:00  [INF] 
+Member was added to the library by the authorized user.
+--------------------Member--------------------
+Name: I am member
+Passport series: 1234
+Passport number: 123454
+Date of birth: 01-01-1990
+--------------------User--------------------
+Name: admin
+Email: admin
+-------------------------------------------- (ff7b95f1)
+2019-08-28T01:48:08.4298214+04:00  [INF] 
+Member was added to the library by the authorized user.
+--------------------Member--------------------
+Name: I am member 2
+Passport series: 1234
+Passport number: 654321
+Date of birth: 01-01-1990
+--------------------User--------------------
+Name: admin
+Email: admin
+-------------------------------------------- (b761a8e7)
+2019-08-28T01:55:01.0552981+04:00  [INF] 
+Book was given to a member by the authorized user.
+--------------------Book--------------------
+Title: Holy Bible
+Author: JESUS
+Publisher: New publish Studio
+Year of publishing: 1100
+Available count: 110
+-------------------Member-------------------
+Name: I am member
+--------------------User--------------------
+Name: admin
+Email: admin
+-------------------------------------------- (fb1b8312)
+2019-08-28T01:56:06.5519880+04:00  [INF] 
+Book was taken from a member by the authorized user.
+--------------------Book--------------------
+Title: Holy Bible
+Author: JESUS
+Publisher: New publish Studio
+Year of publishing: 1100
+Available count: 111
+-------------------Member-------------------
+Name: I am member
+--------------------User--------------------
+Name: admin
+Email: admin
+-------------------------------------------- (66519c9d)

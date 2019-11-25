@@ -1,0 +1,925 @@
+{
+	"info": {
+		"_postman_id": "00c60412-fb45-4cbd-9c57-ac25f4a98c5b",
+		"name": "LibraryIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Get All Books",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/books",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBookById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/books/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Title\": \"Fight club\",\n    \"Author\": {\n        \"Name\": \"Chuck Palahniuk\"\n    },\n    \"Summary\": \"The first rule of Fight Club is: You do not talk about Fight Club.The second rule of Fight Club is: You do not talk about Fight Club.\",\n    \"CountAvailable\": 5\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44330/api/books",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddBook (2)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Title\": \"Holy Bible\",\n    \"Author\": {\n        \"Name\": \"JESUS\"\n    },\n        \"Publisher\": {\n        \"Name\": \"New publish Studio\"\n    },\n    \"DateOfPublishing\" : \"01/01/1100\",\n    \"Summary\": \"NO COMMENTS REQUIRED\",\n    \"CountAvailable\": 111\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44330/api/books",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Publisher\": {\n        \"Name\": \"Most Popular Publisher corp.\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44330/api/books/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"books",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Give Book To A Member",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/Books/7/out?memberId=5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"Books",
+								"7",
+								"out"
+							],
+							"query": [
+								{
+									"key": "memberId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Take Book From A Member",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/Books/2/in?memberId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"Books",
+								"2",
+								"in"
+							],
+							"query": [
+								{
+									"key": "memberId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Book Available Count",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/Books/5/set-book-available-count?count=-2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"Books",
+								"5",
+								"set-book-available-count"
+							],
+							"query": [
+								{
+									"key": "count",
+									"value": "-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Book Available Count",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/Books/3/change-book-available-count?count=-2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"Books",
+								"3",
+								"change-book-available-count"
+							],
+							"query": [
+								{
+									"key": "count",
+									"value": "-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/Books/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"Books",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Members",
+			"item": [
+				{
+					"name": "Get All Members",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/members",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Member By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/members/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"members",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Member",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"I am member\",\n\t\"PassportNumber\": 123456,\n\t\"PassportSeries\": 1234,\n\t\"DateOfBirth\": \"01/01/1990\",\n\t\"IsInBlackList\": false\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44330/api/members",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Member (2)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"I am member\",\n\t\"PassportNumber\": 123456,\n\t\"PassportSeries\": 1234,\n\t\"DateOfBirth\": \"01/01/1990\",\n\t\"IsInBlackList\": false\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44330/api/members",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Member",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"I am member\",\n\t\"PassportNumber\": 123456,\n\t\"PassportSeries\": 1234,\n\t\"DateOfBirth\": \"01/25/1990\",\n\t\"IsInBlackList\": false\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44330/api/members/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"members",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Member To Blacklist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/members/2/add-to-blacklist",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"members",
+								"2",
+								"add-to-blacklist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Member From Blacklist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/members/2/remove-from-blacklist",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"members",
+								"2",
+								"remove-from-blacklist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Member",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/members/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"members",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY3NjY1NjYsImV4cCI6MTU2NzM3MTM2NiwiaWF0IjoxNTY2NzY2NTY2fQ.KOdSvj3hewTsXwj8lLs73uK7UvfuyLUQK1fvea07-KI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/users",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJnaXZlbl9uYW1lIjoi0JXQu9C10L3QsCDQodC10YDQs9C10LXQstC90LAg0JzQtdC90LTQtdC70LXQtdCy0LAiLCJlbWFpbCI6ImUubWVuZGVsZWV2YUBsaWJyYXJ5LnJ1Iiwicm9sZSI6IlVzZXIiLCJuYmYiOjE1NjY4NDA2MzQsImV4cCI6MTU2NzQ0NTQzNCwiaWF0IjoxNTY2ODQwNjM0fQ.JO3PJKACJWRU59pqMPhsoEDRg7ukjpV-PG8ZGVvt8-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/users/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/users",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"I am user A\",\n\t\"Email\": \"example@mail.com\"\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44330/api/users/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"users",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE1NjY4MDM1ODUsImV4cCI6MTU2NzQwODM4NSwiaWF0IjoxNTY2ODAzNTg1fQ.zTlkcchc_FQVPjAH-ZNnt67RopVDLtniyzFyLO7IF4g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44330/api/users/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44330",
+							"path": [
+								"api",
+								"users",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authenticate ADMIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Email\": \"admin\",\n\t\"Password\": \"111\",\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44330/api/users/authenticate",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44330",
+					"path": [
+						"api",
+						"users",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Email\": \"e.mendeleeva@library.ru\",\n\t\"Password\": \"123\",\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44330/api/users/authenticate",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44330",
+					"path": [
+						"api",
+						"users",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "717a9164-8772-4a62-9035-87bf62926bac",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8024000d-af07-404f-aad0-d1f0e6d80760",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

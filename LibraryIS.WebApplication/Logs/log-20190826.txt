@@ -1,0 +1,143 @@
+2019-08-26T22:14:48.8949574+04:00  [INF] 
+Book was added to the library.
+--------------------Book--------------------
+Title: Fight club
+Author: Chuck Palahniuk
+Available count: 5
+
+ (7955c16e)
+2019-08-26T22:14:59.7945879+04:00  [INF] 
+Book was added to the library.
+--------------------Book--------------------
+Title: Holy Bible
+Author: JESUS
+Publisher: New publish Studio
+Year of publishing: 1100
+Available count: 111
+
+ (e5111853)
+2019-08-26T22:15:33.1322059+04:00  [INF] 
+Member was added to the library.
+--------------------Member--------------------
+Name: I am member
+Passport series: 1234
+Passport number: 123456
+Date of birth: 01-01-1990
+
+ (c657b812)
+2019-08-26T22:15:51.0444703+04:00  [INF] 
+Book was given to a member by authorized user.
+--------------------Book--------------------
+Title: Fight club
+Author: Chuck Palahniuk
+Available count: 4
+
+-------------------Member-------------------
+Name: I am member
+--------------------User--------------------
+Name: Елена Сергеевна Менделеева
+Email: e.mendeleeva@library.ru
+ (854de150)
+2019-08-26T22:16:14.2170667+04:00  [INF] 
+Book was taken from a member.
+--------------------Book--------------------
+Title: Fight club
+Author: Chuck Palahniuk
+Available count: 5
+
+-------------------Member-------------------
+Name: I am member
+ (467a254b)
+2019-08-26T22:42:28.1109718+04:00  [INF] 
+Member was added to the library by the authorized user.
+--------------------Member--------------------
+Name: I am member2
+Passport series: 1230
+Passport number: 123450
+Date of birth: 01-01-1990
+
+--------------------User--------------------
+Name: Елена Сергеевна Менделеева
+Email: e.mendeleeva@library.ru
+ (d9ee2bed)
+2019-08-26T22:42:46.4235132+04:00  [INF] 
+Book was given to a member by the authorized user.
+--------------------Book--------------------
+Title: Fight club
+Author: Chuck Palahniuk
+Available count: 4
+
+-------------------Member-------------------
+Name: I am member2
+--------------------User--------------------
+Name: Елена Сергеевна Менделеева
+Email: e.mendeleeva@library.ru
+ (80962d93)
+2019-08-26T22:42:50.2436034+04:00  [INF] 
+Book was given to a member by the authorized user.
+--------------------Book--------------------
+Title: Holy Bible
+Author: JESUS
+Publisher: New publish Studio
+Year of publishing: 1100
+Available count: 110
+
+-------------------Member-------------------
+Name: I am member2
+--------------------User--------------------
+Name: Елена Сергеевна Менделеева
+Email: e.mendeleeva@library.ru
+ (2a9a2e2d)
+2019-08-26T22:43:10.5388319+04:00  [INF] 
+Book was taken from a member by the authorized user.
+--------------------Book--------------------
+Title: Holy Bible
+Author: JESUS
+Publisher: New publish Studio
+Year of publishing: 1100
+Available count: 111
+
+-------------------Member-------------------
+Name: I am member2
+--------------------User--------------------
+Name: Елена Сергеевна Менделеева
+Email: e.mendeleeva@library.ru
+ (3676203a)
+2019-08-26T22:43:14.5261826+04:00  [INF] 
+Book was taken from a member by the authorized user.
+--------------------Book--------------------
+Title: Fight club
+Author: Chuck Palahniuk
+Available count: 5
+
+-------------------Member-------------------
+Name: I am member2
+--------------------User--------------------
+Name: Елена Сергеевна Менделеева
+Email: e.mendeleeva@library.ru
+ (712d5875)
+2019-08-26T22:54:41.8513165+04:00  [INF] 
+Member was added to the library by the authorized user.
+--------------------Member--------------------
+Name: I am member
+Passport series: 1234
+Passport number: 123454
+Date of birth: 01-01-1990
+--------------------User--------------------
+Name: Елена Сергеевна Менделеева
+Email: e.mendeleeva@library.ru
+-------------------------------------------- (e19754b8)
+2019-08-26T22:54:54.9385585+04:00  [INF] 
+Book was given to a member by the authorized user.
+--------------------Book--------------------
+Title: Holy Bible
+Author: JESUS
+Publisher: New publish Studio
+Year of publishing: 1100
+Available count: 110
+-------------------Member-------------------
+Name: I am member
+--------------------User--------------------
+Name: Елена Сергеевна Менделеева
+Email: e.mendeleeva@library.ru
+-------------------------------------------- (c9958643)

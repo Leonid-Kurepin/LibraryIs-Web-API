@@ -1,0 +1,30 @@
+2019-08-29T14:58:20.2227378+04:00  [INF] 
+Book was added to the library by the authorized user.
+--------------------Book--------------------
+Title: Fight club 2
+Author: Chuck Palahniuk
+Available count: 5
+--------------------User--------------------
+Name: admin
+Email: admin
+-------------------------------------------- (3cc490a2)
+2019-08-29T14:58:28.4637868+04:00  [INF] 
+Book was added to the library by the authorized user.
+--------------------Book--------------------
+Title: Fight club 3
+Author: Chuck Palahniuk
+Available count: 5
+--------------------User--------------------
+Name: admin
+Email: admin
+-------------------------------------------- (a5ac1e6d)
+2019-08-29T15:32:10.2817187+04:00  [INF] 
+Book was added to the library by the authorized user.
+--------------------Book--------------------
+Title: Fight club 4
+Author: Chuck Palahniuk
+Available count: 5
+--------------------User--------------------
+Name: admin
+Email: admin
+-------------------------------------------- (218aa8fc)
